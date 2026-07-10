@@ -12,6 +12,7 @@ namespace SmartSystemMenu.Forms
         private const string URL_JAEHYUNG_LEE = "http://www.kolanp.com";
         private const string URL_MAROCCO2 = "https://github.com/Marocco2";
         private const string URL_SAIYAJINK = "https://github.com/SaiyajinK";
+        private const string URL_DELIOND = "https://github.com/Deliond";
 
         public AboutForm(LanguageSettings settings)
         {
@@ -33,6 +34,7 @@ namespace SmartSystemMenu.Forms
                 controlName == "linkJaehyungLee" ? URL_JAEHYUNG_LEE :
                 controlName == "linkMarocco2" ? URL_MAROCCO2 :
                 controlName == "linkSaiyajinK" ? URL_SAIYAJINK :
+                controlName == "linkDeliond" ? URL_DELIOND :
                 URL_SMART_SYSTEM_MENU;
             SystemUtils.RunAs(SystemUtils.GetDefaultBrowserModuleName(), url, true, UserType.Normal);
         }

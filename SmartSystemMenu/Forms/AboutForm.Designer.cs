@@ -50,8 +50,8 @@
             this.linkSaiyajinK = new System.Windows.Forms.LinkLabel();
             this.lblKissAction = new System.Windows.Forms.Label();
             this.lblKiss = new System.Windows.Forms.Label();
-            this.lblDeliond = new System.Windows.Forms.Label();
             this.lblDeliondAction = new System.Windows.Forms.Label();
+            this.linkDeliond = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +93,7 @@
             this.btnOk.Margin = new System.Windows.Forms.Padding(4);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(115, 37);
-            this.btnOk.TabIndex = 18;
+            this.btnOk.TabIndex = 20;
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.ButtonOkClick);
             // 
@@ -269,16 +269,6 @@
             this.lblKiss.TabIndex = 16;
             this.lblKiss.Text = "Kiss Dénes László";
             // 
-            // lblDeliond
-            // 
-            this.lblDeliond.AutoSize = true;
-            this.lblDeliond.Location = new System.Drawing.Point(155, 356);
-            this.lblDeliond.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDeliond.Name = "lblDeliond";
-            this.lblDeliond.Size = new System.Drawing.Size(56, 17);
-            this.lblDeliond.TabIndex = 19;
-            this.lblDeliond.Text = "Deliond";
-            // 
             // lblDeliondAction
             // 
             this.lblDeliondAction.AutoSize = true;
@@ -286,16 +276,28 @@
             this.lblDeliondAction.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDeliondAction.Name = "lblDeliondAction";
             this.lblDeliondAction.Size = new System.Drawing.Size(129, 17);
-            this.lblDeliondAction.TabIndex = 20;
+            this.lblDeliondAction.TabIndex = 19;
             this.lblDeliondAction.Text = "Spanish translation";
+            // 
+            // linkDeliond
+            // 
+            this.linkDeliond.AutoSize = true;
+            this.linkDeliond.Location = new System.Drawing.Point(155, 356);
+            this.linkDeliond.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkDeliond.Name = "linkDeliond";
+            this.linkDeliond.Size = new System.Drawing.Size(56, 17);
+            this.linkDeliond.TabIndex = 18;
+            this.linkDeliond.TabStop = true;
+            this.linkDeliond.Text = "Deliond";
+            this.linkDeliond.Click += new System.EventHandler(this.LinkClick);
             // 
             // AboutForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(706, 413);
+            this.Controls.Add(this.linkDeliond);
             this.Controls.Add(this.lblDeliondAction);
-            this.Controls.Add(this.lblDeliond);
             this.Controls.Add(this.lblKiss);
             this.Controls.Add(this.lblKissAction);
             this.Controls.Add(this.lblSaiyajinK);
@@ -354,7 +356,7 @@
         private System.Windows.Forms.LinkLabel linkSaiyajinK;
         private System.Windows.Forms.Label lblKissAction;
         private System.Windows.Forms.Label lblKiss;
-        private System.Windows.Forms.Label lblDeliond;
         private System.Windows.Forms.Label lblDeliondAction;
+        private System.Windows.Forms.LinkLabel linkDeliond;
     }
 }
